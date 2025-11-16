@@ -1,0 +1,17 @@
+name: [04.GitOps] GitHub Action for Homework Assignment 1
+run-name: [04.GitOps] Homework Assignment 1: Setting up a Basic GitHub Action
+on:
+  push:
+    branches:
+      - main
+jobs:
+  04-gitops-homework-1-github-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print info
+        run: echo "Run 04-gitops-homework-1-github-action"
+      - name: Install python
+        run: sudo apt update && sudo apt install python3
+      - name: Run python script
+        run: python3 hello.py

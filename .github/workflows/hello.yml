@@ -1,11 +1,11 @@
-name: [04.GitOps] GitHub Action for Homework Assignment 1
-run-name: [04.GitOps] Homework Assignment 1: Setting up a Basic GitHub Action
+name: "[04.GitOps] GitHub Action for Homework Assignment 1"
+
 on:
   push:
     branches:
       - main
 jobs:
-  04-gitops-homework-1-github-action:
+  _04-gitops-homework-1-github-action:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
